@@ -1,4 +1,4 @@
-#============================**********========Linux Syllabus=========**************=================
+#=================================================Linux Syllabus==========================
 The GNU C Compiler
 A short tour of Linux History
 Introduction to Linux Kernel
@@ -22,7 +22,7 @@ Threads in Linux
 	Mutex Variables
 Programming & Debugging Tools
 
-#=================================******======Extra======************===================
+#=============================================================Extra=========================
 Time
 Log Creation
 Makefile
@@ -33,7 +33,7 @@ Shell Scripting
 QT
 Linux Network = Server Setup (Apache) , DHCP setup
 
-#==============================*******======Required======*********===============
+#===============================================================Required===================
 Deadlocks
 MISRA-C
 Kernel Compilation
