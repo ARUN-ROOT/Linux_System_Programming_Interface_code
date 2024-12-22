@@ -1,0 +1,121 @@
+Package :
+ sudo apt install gcc mosquitto mosquitto-clients libmosquitto-dev
+
+Version:
+ mosquitto -v
+
+Code:
+ gcc publish.c -o publish -lmosquitto
+ gcc subscribe.c -o subscribe -lmosquitto
+
+Remove:
+ sudo apt-get remove --auto-remove mosquitto
+ sudo apt-get remove --auto-remove mosquitto-clients
+
+After removal , again you check mosquitto -v;;;
+arun@arun:~$ mosquitto -v
+bash: /usr/sbin/mosquitto: No such file or directory
+
+status:
+
+sudo service mosquitto status
+
+mosquitto_sub -t test/t1
+mosquitto_pub -t test/t1 -m "Hello Arun"
+
+
+
+man mosquitto
+
+Prerequisite:
+	Install Mosquitto MQTT any version in your ubuntu machine
+	check Installation procedure Mosquitto_MQTT PPT
+
+Go to MQTT source code folder
+
+open Terminal 1 Run publish.c by using below command in Terminal window
+	gcc publish.c -o publish_client -lmosquitto
+	
+open Terminal 2 Run subscribe.c by using below command in Terminal window
+	gcc subscribe.c -o subscribe_client -lmosquitto
+	
+       Executable file is created publish_client and subscribe_client
+
+open Terminal 3 Run Mosquitto MQTT server in your local Machine
+
+In Terminal 1 run : ./publish_client
+In Terminal 2 run : ./subscribe_client
+
+        So Everytime in terminal 1 to run ./publish_client The message mention in publish.c under topic is sent to local Broker
+        Another End , Automatically received in Terminal 2 because we subscribe same topic in Local broker.we received message .
+        
+        
+        
+        
+        arun@arun:/etc$ ls -l mosquitto/
+total 28
+-rw-r--r-- 1 root root  230 Feb 28  2020 aclfile.example
+drwxr-xr-x 2 root root 4096 Feb 11 17:11 ca_certificates
+drwxr-xr-x 2 root root 4096 Feb 11 17:11 certs
+drwxr-xr-x 2 root root 4096 Feb 11 17:41 conf.d
+-rw-r--r-- 1 root root  348 Feb 11 17:35 mosquitto.conf
+-rw-r--r-- 1 root root   23 Feb 28  2020 pskfile.example
+-rw-r--r-- 1 root root  355 Feb 28  2020 pwfile.example
+arun@arun:/etc$ sudo rm -fr mosquitto/
+arun@arun:/etc$ 
+
+=================================***************SSL/TLS****************==============================================
+In order to install OpenSSL on Ubuntu based systems, run the following command from the terminal of the Ubuntu os.
+
+sudo apt-get install openssl
+
+After successful installation of openssl ,follow the steps as given below for generations of CA keys, CA certificates, Server keys and Server Certificates,
+
+1. Create a CA key  for client
+
+     openssl genrsa -des3 -out ca.key 2048
+
+This command generates ca.key having CA keys for the clients.
+
+2. Create CA certificate  using the CA key
+
+    openssl req -new -x509 -days 1833 -key ca.key -out ca.crt
+
+This command generates the CA certificates for the client.
+
+3. Create a broker key wout encryption
+
+   openssl genrsa -out server.key 2048
+
+This command generates keys for Broker which can be used to .csr file.
+
+4. Request for Broker certificate.Create .csr file with broker key
+
+   openssl req -new -out server.csr -key server.key
+
+This command geberates request for Broker cerificate i.e. .csr file
+
+ 5  Create a broker certificate 
+
+    openssl x509 -req -in server.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out server.crt -days 360
+
+This command generates server certificate which is valid fro 360 days.
+
+
+=================================*******************************==============================================
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+        
+         Ano

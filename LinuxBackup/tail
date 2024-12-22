@@ -1,0 +1,31 @@
+arun@arun:~$ git clone https://github.com/ARUN-ROOT/Linux.git
+Cloning into 'Linux'...
+warning: You appear to have cloned an empty repository
+//appear clone in your home dir//////
+arun@arun:~$ cd Linux/
+arun@arun:~/Linux$ git add 00_Standard_Macros.c 
+arun@arun:~/Linux$ git commit 
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+fatal: unable to auto-detect email address (got 'arun@arun.(none)')
+arun@arun:~/Linux$ git config --global user.email "you@example.com"
+arun@arun:~/Linux$ git config --global user.email "arunvenkatesan25@gmail.com"
+arun@arun:~/Linux$ git config --global user.name "Arun"
+arun@arun:~/Linux$ git commit
+[master (root-commit) 1d7a0c5] project
+ 1 file changed, 23 insertions(+)
+ create mode 100644 00_Standard_Macros.c
+arun@arun:~/Linux$ git push
+Username for 'https://github.com': arunvenkatesan25@gmail.com
+Password for 'https://arunvenkatesan25@gmail.com@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/ARUN-ROOT/Linux.git/'
+

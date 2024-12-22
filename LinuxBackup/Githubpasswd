@@ -1,0 +1,27 @@
+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bHp
+
+
+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FUi
+
+
+
+arun@arun:~/Github/Linux$ cd .git
+arun@arun:~/Github/Linux/.git$ ls
+branches  COMMIT_EDITMSG  config  description  HEAD  hooks  index  info  logs  objects  refs
+arun@arun:~/Github/Linux/.git$ cat config
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/ARUN-ROOT/Linux.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/master
+arun@arun:~/Github/Linux/.git$ 
+
+
+git push -u origin main
+

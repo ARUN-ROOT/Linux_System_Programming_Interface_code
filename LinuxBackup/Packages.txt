@@ -1,0 +1,73 @@
+***********Basic Instalation Packages******************
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install build-essential build-dep
+sudo apt-get install binutils
+sudo apt install make
+sudo apt-get install git
+sudo apt-get install vim
+sudo apt-get install libssl-dev
+sudo apt-get install manpages-dev
+sudo apt install net-tools
+sudo apt install fdisk
+sudo apt install parted
+sudo apt install gparted
+sudo apt-get install bc
+sudo apt-get install nmap
+sudo apt-get install minicom
+    # nmap -sn 192.168.1.0/24 find out Ip add
+********************************************************
+
+
+*************Host Kernel Compilation****************
+sudo apt-get install build-essential 
+sudo apt-get install libelf-dev
+sudo apt-get install ncurses-dev
+sudo apt-get install libncurses5-dev
+sudo apt-get install libssl-dev
+sudo apt-get install byzanz
+sudo apt-get install flex 
+sudo apt-get install bison
+****************************************************
+===============================================================================================================================
+===============================================================================================================================
+
+
+
+===============================================================================================================================
+
+
+
+
+
+
+
+
+sudo fdisk /dev/sdb1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ssh raspi@192.168.1.8
+
+raspi:$y$j9T$Cx3m4dzMtC1Cer7zvYvUH0$lxMH1D3mhWkx8snYIblh/m6G0TJkyxU/duatR7a00a9:1000:1000:,,,:/home/raspi:/bin/bash
+
+

@@ -1,0 +1,17 @@
+ https://github.com/ARUN-ROOT/Linux.git
+    
+    echo "# Linux" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ARUN-ROOT/Linux.git
+git push -u origin main
+
+
+git remote add origin https://github.com/ARUN-ROOT/Linux.git
+git branch -M main
+git push -u origin main
+    51	user2:x:1003:1003::/home/user2:/bin/bash
+    52	testing:x:1004:1005::/home/testing:/bin/bash
+    53	sai:x:1005:1007::/home/sai:/bin/bash

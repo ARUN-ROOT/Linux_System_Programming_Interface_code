@@ -1,0 +1,77 @@
+arun@arun:~/MQTT/mosquitto-2.0.15$ make clean
+set -e; for d in lib apps client plugins src; do make -C ${d} clean; done
+make[1]: Entering directory '/home/arun/MQTT/mosquitto-2.0.15/lib'
+rm -f *.o libmosquitto.so.1 libmosquitto.so libmosquitto.a *.gcno *.gcda
+make -C cpp clean
+make[2]: Entering directory '/home/arun/MQTT/mosquitto-2.0.15/lib/cpp'
+rm -f *.o libmosquittopp.so.1 libmosquittopp.a
+make[2]: Leaving directory '/home/arun/MQTT/mosquitto-2.0.15/lib/cpp'
+make[1]: Leaving directory '/home/arun/MQTT/mosquitto-2.0.15/lib'
+make[1]: Entering directory '/home/arun/MQTT/mosquitto-2.0.15/apps'
+set -e; for d in db_dump mosquitto_ctrl mosquitto_passwd; do make -C ${d} clean; done
+make[2]: Entering directory '/home/arun/MQTT/mosquitto-2.0.15/apps/db_dump'
+rm -f *.o mosquitto_db_dump
+make[2]: Leaving directory '/home/arun/MQTT/mosquitto-2.0.15/apps/db_dump'
+make[2]: Entering directory '/home/arun/MQTT/mosquitto-2.0.15/apps/mosquitto_ctrl'
+rm -f *.o mosquitto_ctrl *.gcda *.gcno *.so
+make[2]: Leaving directory '/home/arun/MQTT/mosquitto-2.0.15/apps/mosquitto_ctrl'
+make[2]: Entering directory '/home/arun/MQTT/mosquitto-2.0.15/apps/mosquitto_passwd'
+rm -f *.o mosquitto_passwd *.gcda *.gcno
+make[2]: Leaving directory '/home/arun/MQTT/mosquitto-2.0.15/apps/mosquitto_passwd'
+make[1]: Leaving directory '/home/arun/MQTT/mosquitto-2.0.15/apps'
+make[1]: Entering directory '/home/arun/MQTT/mosquitto-2.0.15/client'
+rm -f *.o mosquitto_pub mosquitto_sub mosquitto_rr *.gcda *.gcno
+make[1]: Leaving directory '/home/arun/MQTT/mosquitto-2.0.15/client'
+make[1]: Entering directory '/home/arun/MQTT/mosquitto-2.0.15/plugins'
+set -e; for d in auth-by-ip deny-protocol-version dynamic-security message-timestamp payload-modification; do make -C ${d} clean; done
+make[2]: Entering directory '/home/arun/MQTT/mosquitto-2.0.15/plugins/auth-by-ip'
+rm -f *.o mosquitto_auth_by_ip.so *.gcda *.gcno
+make[2]: Leaving directory '/home/arun/MQTT/mosquitto-2.0.15/plugins/auth-by-ip'
+make[2]: Entering directory '/home/arun/MQTT/mosquitto-2.0.15/plugins/deny-protocol-version'
+rm -f *.o mosquitto_deny_protocol_version.so *.gcda *.gcno
+make[2]: Leaving directory '/home/arun/MQTT/mosquitto-2.0.15/plugins/deny-protocol-version'
+make[2]: Entering directory '/home/arun/MQTT/mosquitto-2.0.15/plugins/dynamic-security'
+rm -f *.o mosquitto_dynamic_security.so *.gcda *.gcno
+make[2]: Leaving directory '/home/arun/MQTT/mosquitto-2.0.15/plugins/dynamic-security'
+make[2]: Entering directory '/home/arun/MQTT/mosquitto-2.0.15/plugins/message-timestamp'
+rm -f *.o mosquitto_message_timestamp.so *.gcda *.gcno
+make[2]: Leaving directory '/home/arun/MQTT/mosquitto-2.0.15/plugins/message-timestamp'
+make[2]: Entering directory '/home/arun/MQTT/mosquitto-2.0.15/plugins/payload-modification'
+rm -f *.o mosquitto_payload_modification.so *.gcda *.gcno
+make[2]: Leaving directory '/home/arun/MQTT/mosquitto-2.0.15/plugins/payload-modification'
+make[1]: Leaving directory '/home/arun/MQTT/mosquitto-2.0.15/plugins'
+make[1]: Entering directory '/home/arun/MQTT/mosquitto-2.0.15/src'
+rm -f *.o mosquitto *.gcda *.gcno
+make[1]: Leaving directory '/home/arun/MQTT/mosquitto-2.0.15/src'
+set -e; for d in man; do make -C ${d} clean; done
+make[1]: Entering directory '/home/arun/MQTT/mosquitto-2.0.15/man'
+make[1]: Nothing to be done for 'clean'.
+make[1]: Leaving directory '/home/arun/MQTT/mosquitto-2.0.15/man'
+make -C test clean
+make[1]: Entering directory '/home/arun/MQTT/mosquitto-2.0.15/test'
+make -C lib clean
+make[2]: Entering directory '/home/arun/MQTT/mosquitto-2.0.15/test/lib'
+make -C c clean
+make[3]: Entering directory '/home/arun/MQTT/mosquitto-2.0.15/test/lib/c'
+rm -f *.test
+make[3]: Leaving directory '/home/arun/MQTT/mosquitto-2.0.15/test/lib/c'
+make -C cpp clean
+make[3]: Entering directory '/home/arun/MQTT/mosquitto-2.0.15/test/lib/cpp'
+rm -f *.test
+make[3]: Leaving directory '/home/arun/MQTT/mosquitto-2.0.15/test/lib/cpp'
+make[2]: Leaving directory '/home/arun/MQTT/mosquitto-2.0.15/test/lib'
+make -C broker clean
+make[2]: Entering directory '/home/arun/MQTT/mosquitto-2.0.15/test/broker'
+rm -f *.vglog *.db
+make -C c clean
+make[3]: Entering directory '/home/arun/MQTT/mosquitto-2.0.15/test/broker/c'
+rm -f *.so *.test
+make[3]: Leaving directory '/home/arun/MQTT/mosquitto-2.0.15/test/broker/c'
+make[2]: Leaving directory '/home/arun/MQTT/mosquitto-2.0.15/test/broker'
+make -C unit clean
+make[2]: Entering directory '/home/arun/MQTT/mosquitto-2.0.15/test/unit'
+rm -rf mosq_test bridge_topic_test persist_read_test persist_write_test
+rm -rf *.o *.gcda *.gcno coverage.info out/
+make[2]: Leaving directory '/home/arun/MQTT/mosquitto-2.0.15/test/unit'
+make[1]: Leaving directory '/home/arun/MQTT/mosquitto-2.0.15/test'
+

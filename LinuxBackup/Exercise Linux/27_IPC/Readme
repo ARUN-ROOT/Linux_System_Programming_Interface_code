@@ -1,0 +1,3 @@
+One process writing 1 file during that time another process cannot possible to read or write that file it should wait until first process complete their writing.
+
+you can run both Terminal with different executable file

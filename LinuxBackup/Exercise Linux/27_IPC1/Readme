@@ -1,0 +1,5 @@
+sender process create one file and write it. fcntl is used and also Lock that file until writing the data.Other process cannot interfere
+Another receiver process try to read the  file. Note: fcntl not used.
+Conclusion: another process read that data. Because fcntl not used.
+
+

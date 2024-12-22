@@ -1,0 +1,20 @@
+Package :
+ sudo apt install gcc mosquitto mosquitto-clients libmosquitto-dev
+
+Version:
+ mosquitto -v
+
+Code:
+ gcc publish.c -o mqtt_pub -lmosquitto
+ gcc subscribe.c -o mqtt_sub -lmosquitto
+
+Remove:
+ sudo apt-get remove --auto-remove mosquitto
+
+After removal , again you check mosquitto -v
+arun@arun:~$ mosquitto -v
+bash: /usr/sbin/mosquitto: No such file or directory
+
+
+mosquitto_sub -t test/t1
+mosquitto_pub -t test/t1 -m "Hello Arun"
