@@ -31,7 +31,8 @@ Command Line Arguments
 Github
 Shell Scripting
 QT
-Linux Network = Server Setup (Apache) , DHCP setup
+Linux Network = Server Setup (Apache) , DHCP setup , SSH ,SCP
+
 
 #===============================================================Required===================
 Deadlocks
