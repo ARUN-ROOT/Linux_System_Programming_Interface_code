@@ -1,0 +1,45 @@
+#============================**********========Linux Syllabus=========**************=================
+The GNU C Compiler
+A short tour of Linux History
+Introduction to Linux Kernel
+Linux File Management
+File System related System Calls
+Linux Process Management
+Process Related System Calls
+Memory Management in detail
+Shared Libraries
+Inter Process Communication
+	Signals
+	Pipe
+	FIFO
+System V IPC
+	Message Queues
+	Semaphores
+	Shared Memory
+	Sockets
+Threads in Linux
+	Thread Management
+	Mutex Variables
+Programming & Debugging Tools
+
+#=================================******======Extra======************===================
+Time
+Log Creation
+Makefile
+GCC compilation steps
+Command Line Arguments
+Github
+Shell Scripting
+QT
+Linux Network = Server Setup (Apache) , DHCP setup
+
+#==============================*******======Required======*********===============
+Deadlocks
+MISRA-C
+Kernel Compilation
+Cross Compilation / Porting = OS ISO Build
+Image Build
+System D
+Daemons
+logs-syslog/Dmesg/Journals
+
